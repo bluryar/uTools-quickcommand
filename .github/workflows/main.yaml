@@ -31,7 +31,9 @@ jobs:
       run: quasar build
 
     - name: Archive files
-      run: zip -r dist-spa.zip /home/runner/work/uTools-quickcommand/uTools-quickcommand/dist/spa
+      run: |
+        cd /home/runner/work/uTools-quickcommand/uTools-quickcommand/dist/spa
+        zip -r /home/runner/work/uTools-quickcommand/uTools-quickcommand/dist-spa.zip *
 
     - name: Get the date
       id: date
