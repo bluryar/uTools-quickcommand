@@ -1,7 +1,8 @@
-name: Run npm
+name: Build
 on:
   schedule:
     - cron:  '0 0 * * *'  # 运行时间: 每日凌晨
+  workflow_dispatch:
 
 jobs:
   build:
