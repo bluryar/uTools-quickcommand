@@ -33,6 +33,11 @@ jobs:
     - name: Archive files
       run: zip -r dist-spa.zip /home/runner/work/uTools-quickcommand/uTools-quickcommand/dist/spa
 
+    - name: Get the date
+      id: date
+      run: echo "::set-output name=date::$(/bin/date -u "+%Y%m%d%H%M%S")"
+      shell: bash
+
     - name: Create release
       id: create_release
       uses: actions/create-release@v1
@@ -51,8 +56,3 @@ jobs:
         asset_path: /home/runner/work/uTools-quickcommand/uTools-quickcommand/dist-spa.zip # 使用你的构建产物的路径
         asset_name: dist-spa.zip # 使用你构建产物的名称
         asset_content_type: application/zip # 使用你构建产物的类型
-
-    - name: Get the date
-      id: date
-      run: echo "::set-output name=date::$(/bin/date -u "+%Y%m%d%H%M%S")"
-      shell: bash
