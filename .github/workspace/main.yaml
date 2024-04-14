@@ -1,0 +1,31 @@
+name: Run npm
+on:
+  schedule:
+    - cron:  '0 0 * * *'  # 运行时间: 每日凌晨
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check-out repository
+      uses: actions/checkout@v2
+
+    - name: Use Node.js 
+      uses: actions/setup-node@v2
+      with:
+        node-version: '14'
+
+    - name: Install Quasar CLI
+      run: npm install -g @quasar/cli
+
+    - name: Install project dependencies
+      run: |
+        cd uTools-quickcommand
+        npm i
+        cd plugin
+        npm i
+        cd .. 
+
+    - name: Run quasar build
+      run: quasar build
