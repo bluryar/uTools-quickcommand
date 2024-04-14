@@ -22,7 +22,6 @@ jobs:
 
     - name: Install project dependencies
       run: |
-        cd uTools-quickcommand
         npm i
         cd plugin
         npm i
