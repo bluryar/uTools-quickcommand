@@ -2,6 +2,15 @@
 
 [![GitHub stars](https://img.shields.io/github/stars/fofolee/uTools-quickcommand?style=flat-square)](https://github.com/fofolee/uTools-quickcommand/stargazers) [![GitHub forks](https://img.shields.io/github/forks/fofolee/uTools-quickcommand?style=flat-square)](https://github.com/fofolee/uTools-quickcommand/network/members) [![version](https://img.shields.io/badge/dynamic/json?color=f58142&label=version&query=%24.version&url=https%3A%2F%2Fraw.githubusercontent.com%2Ffofolee%2FuTools-quickcommand%2Fmaster%2Fplugin%2Fplugin.json&style=flat-square)](https://www.yuque.com/fofolee/qcdocs3/ucnd2o) [![猿料](https://img.shields.io/badge/%E7%8C%BF%E6%96%99-%2Fd%2F424-red?style=flat-square)](https://yuanliao.info/d/424) [![评论](https://img.shields.io/badge/dynamic/json?color=e05d44&label=%E8%AF%84%E8%AE%BA&query=%24.data.attributes.commentCount&url=https%3A%2F%2Fyuanliao.info%2Fapi%2Fdiscussions%2F424&style=flat-square)](https://yuanliao.info/d/424) ![rating](https://img.shields.io/badge/dynamic/json?color=05d44&label=评分&query=%24.rating&url=http%3A%2F%2Fopen.u-tools.cn%2Fplugins%2F9a1d1d03%3Ftag_id%3D0%26mid%3Dd1fef324-b4fd-5f81-b05e-4d4d822277b3%26nid%3Df1960e006c87cf1107f2017711668d6c&style=flat-square) ![downloads](https://img.shields.io/badge/dynamic/json?color=05d44&label=下载&query=%24.downloads&url=http%3A%2F%2Fopen.u-tools.cn%2Fplugins%2F9a1d1d03%3Ftag_id%3D0%26mid%3Dd1fef324-b4fd-5f81-b05e-4d4d822277b3%26nid%3Df1960e006c87cf1107f2017711668d6c&style=flat-square)
 
+## 开始
+
+1. 下载 [dist-spa.zip](https://github.com/bluryar/uTools-quickcommand/releases)
+2. 解压
+3. 去utools插件市场下载开发者工具
+4. 打开开发者工具，选择插件目录
+5. 点击启动插件
+6. 通过可视化界面打包插件
+
 ## 编译安装
 
 ```sh
