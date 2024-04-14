@@ -7,7 +7,8 @@
 ```sh
 npm i -g @quasar/cli
 cd uTools-quickcommand
-npm i && cd plugin && npm i && cd ..
+# npm i && cd plugin && npm i && cd ..
+pnpm install
 # 调试
 quasar dev
 # 编译
