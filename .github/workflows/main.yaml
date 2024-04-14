@@ -30,12 +30,15 @@ jobs:
     - name: Run quasar build
       run: quasar build
 
+    - name: Archive files
+      run: zip -r dist-spa.zip /home/runner/work/uTools-quickcommand/uTools-quickcommand/dist/spa
+
     - name: Upload Release Asset
       uses: actions/upload-release-asset@v1
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         upload_url: ${{ github.event.release.upload_url }} 
-        asset_path: /home/runner/work/uTools-quickcommand/uTools-quickcommand/dist/spa # 修改为你的构建产物的路径
-        asset_name: dist-spa # 修改为你构建产物的名称，可以自己设定
+        asset_path: /home/runner/work/uTools-quickcommand/uTools-quickcommand/dist-spa.zip # 修改为你的构建产物的路径
+        asset_name: dist-spa.zip # 修改为你构建产物的名称，可以自己设定
         asset_content_type: application/zip # 修改为你构建产物的类型
